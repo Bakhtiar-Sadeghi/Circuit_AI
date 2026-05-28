@@ -1,0 +1,24 @@
+{
+  "tenants": {
+    "company_a": {
+      "threshold": 0.4,
+      "weights": {
+        "non_maleficence": 0.6,
+        "autonomy": 0.1,
+        "beneficence": 0.1,
+        "justice": 0.1,
+        "explicability": 0.1
+      }
+    },
+    "company_b": {
+      "threshold": 0.7,
+      "weights": {
+        "non_maleficence": 0.3,
+        "autonomy": 0.3,
+        "beneficence": 0.2,
+        "justice": 0.1,
+        "explicability": 0.1
+      }
+    }
+  }
+}

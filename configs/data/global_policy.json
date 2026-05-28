@@ -1,0 +1,5 @@
+{
+  "global_policy": {
+    "min_safety_standard": 0.4
+  }
+}
