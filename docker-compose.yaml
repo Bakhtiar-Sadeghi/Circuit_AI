@@ -1,0 +1,9 @@
+services:
+  opa:
+    image: openpolicyagent/opa:latest
+    ports:
+      - "8181:8181"
+    # OPA loads all files in /policies recursively
+    command: "run --server --log-level debug /policies"
+    volumes:
+      - ./configs:/policies
