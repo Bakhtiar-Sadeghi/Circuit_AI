@@ -1,9 +1,18 @@
+# CircuitAI: Agentic Governance for Production AI
 
-# AI Kill Switch: Standardizing Agentic Governance with OTel & OPA
+**Your AI agents are making decisions in production right now. Do you know why?**
 
-As LLM agents move from experimental pilots to production workloads, organizations face a critical Day 2 Operations challenge: How do we monitor, audit, and govern autonomous actors at scale? Traditional observability tracks what happened, but cannot explain the intent behind an agent's decision. Without this context, platform teams are mere spectators to their own autonomous outages.
+Traditional observability tells you *what* happened. CircuitAI tells you *whether it should have happened at all.*
 
-This repository introduces CircuitAI, a framework that provides a vendor-neutral blueprint for agentic governance. By operationalizing the AI4People ethical framework (Autonomy, Beneficence, Non-maleficence, Justice, and Explicability), we treat AI "Intent" as a first-class observability metric. Using the Principlist Engine, we translate these pillars into enforceable OpenTelemetry (OTel) attributes. We use Open Policy Agent (OPA) to evaluate agent intent in real-time, enabling a "Kill Switch" that can pause or block high-risk actions before they impact production.
+As LLM agents move from pilots to production, platform teams face a critical gap: autonomous systems acting on infrastructure with no enforceable ethical or risk boundary. CircuitAI closes that gap with a vendor-neutral, cloud-native governance plane that intercepts agentic intent *before* it becomes an incident.
+
+**Built on standards you already run:**
+- 🔭 **OpenTelemetry**: treats AI intent as a first-class observability signal
+- ⚖️ **Open Policy Agent**: enforces ethical risk thresholds in real time
+- 🔴 **Kill Switch**: terminates high-risk agent actions before they hit production
+
+**Grounded in research:**
+CircuitAI operationalises the AI4People ethical framework — Autonomy, Beneficence, Non-maleficence, Justice, Explicability- as enforceable OTLP attributes, translating cybersecurity ethical decision-making research into running infrastructure.
 
 ---
 
