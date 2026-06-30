@@ -144,8 +144,15 @@ opa run --server --addr :8181 configs/policy.rego configs/data/global_policy.jso
 
 ```bash
    python3 app.py
-
 ```
+4.1 Running into issues locally? Consider run venv
+
+    python3 -m venv venv
+    source venv/bin/activate
+    python3 app.py
+    
+
+
 
 *Observe the real-time "Kill" decisions in the logs and view the intent-enriched traces in the Jaeger UI at `localhost:16686`.*
 
