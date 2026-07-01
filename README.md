@@ -97,7 +97,6 @@ graph TD
 
 **Core Project Files:**
 *   **`app.py`**: The main Python orchestrator. Handles the AI agent loop and exports OTLP-enriched traces to Jaeger.
-*   **`authz.rego`**: The primary **Rego V1** policy gate. Enforces the $1,000 budget logic for CircuitAI.
 *   **`docker-compose.yaml`**: Pre-configured stack for launching Jaeger and OPA with volume mapping.
 *   **`configs/`**: Advanced policy directory.
     *   **`policy.rego`**: Reusable OPA policy library for cross-tenant governance.
