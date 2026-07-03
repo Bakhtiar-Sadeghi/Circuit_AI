@@ -39,9 +39,10 @@ For each intent, we calculate the distance from perfection and apply the tenant'
 
 $$R = \sum_{i=1}^{5} (1 - S_i) \cdot W_i$$
 
-*   **$S_i$:** The score assigned to the OTLP attribute (e.g., `check.amount` score).
+*   **$S_i$:** The score assigned to the OTLP attribute (e.g., `ai.intent.non_maleficence` score).
 *   **$W_i$:** The tenant-specific weight (how much the organization cares about that vector).
 *   **$R$:** The total Risk Gap. The agent is **terminated** if $R \geq \text{Threshold}$.
+  > **Double-Gate Policy:** The agent must pass both a **Global Safety Floor** (non-maleficence ≥ `min_safety_standard`) AND a **Tenant Risk Ceiling** ($R$ < threshold). Failing either gate triggers the Kill Switch.
 
 ---
 
