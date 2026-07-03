@@ -119,7 +119,7 @@ See the Kill Switch in action by running the local containerized stack:
 
 ```
 
-*TThis launches Jaeger with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
+*This launches Jaeger with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
 
 2. **Install SDKs:**
 
