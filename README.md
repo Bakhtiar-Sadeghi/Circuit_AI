@@ -17,15 +17,16 @@ CircuitAI operationalises the AI4People ethical framework — Autonomy, Benefice
 ---
 
 ## 🏛️ The 5-Vector Intent Schema (OTLP Mapping)
-To manage AI risk, CircuitAI serializes the **5 Ethical Principles of AI** into standardized OTLP attributes. This allows governance decisions to be audited via existing observability tools (Jaeger/Prometheus).
+
+To manage AI risk, CircuitAI serializes the **5 Ethical Principles of AI** into standardized OTLP attributes, allowing governance decisions to be audited via existing observability tools (Jaeger/Prometheus).
 
 | Dimension | OTLP Attribute | Operational Utility (CircuitAI) |
 | :--- | :--- | :--- |
-| **Beneficence** | `check.amount` | **Financial Gate:** Prevents unauthorized spend or autonomous "spend-looping." |
-| **Non-maleficence** | `opa.decision` | **Kill Switch:** Triggers a hard process termination if policy returns `false`. |
-| **Autonomy** | `user.role` | **Access Control:** Matches the agent's "authority" level to the risk of the action. |
-| **Justice** | `ai.intent.justice` | Enables historical auditability of resource and budget allocation. |
-| **Explicability** | `otel.scope.name` | Identifies the specific code module/agent responsible for the intent. |
+| **Non-maleficence** | `ai.intent.non_maleficence` | **Kill Switch:** Global safety floor — hard termination if score falls below `min_safety_standard`. |
+| **Autonomy** | `ai.intent.autonomy` | **Access Control:** Weighted risk contributor reflecting the agent's authority vs. the risk of the action. |
+| **Beneficence** | `ai.intent.beneficence` | **Outcome Gate:** Weighted risk contributor measuring positive intent of the proposed action. |
+| **Justice** | `ai.intent.justice` | **Audit Trail:** Enables historical auditability of resource and budget allocation decisions. |
+| **Explicability** | `ai.intent.explicability` | **Traceability:** Identifies the responsible code module via `otel.scope.name` for forensic review. |
 
 ---
 
