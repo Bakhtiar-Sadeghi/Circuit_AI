@@ -119,7 +119,7 @@ See the Kill Switch in action by running the local containerized stack:
 
 ```
 
-*This launches the OTel Collector, OPA, and a Jaeger instance for visualization.*
+*TThis launches Jaeger with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
 
 2. **Install SDKs:**
 
@@ -129,7 +129,12 @@ Ensure your local environment has the modern OTel and OPA dependencies:
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp requests python-dotenv
 
 ```
-
+**Install OPA CLI:**
+e.g. 
+macOS: 
+    ```
+    brew install opa
+    ```
 
 3. **Running the OPA Governance Server:**
 
@@ -153,7 +158,7 @@ opa run --server --addr :8181 configs/policy.rego configs/data/global_policy.jso
 
 
 
-*Observe the real-time "Kill" decisions in the logs and view the intent-enriched traces in the Jaeger UI at `localhost:16686`.*
+*Observe the real-time "Kill" decisions in the logs and view the intent-enriched traces in the Jaeger UI at http://localhost:16686 .*
 
 
 ---
