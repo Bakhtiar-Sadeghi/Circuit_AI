@@ -185,7 +185,6 @@ This project helps platform teams operationalize global AI regulations using pro
 
 | Regulation | Requirement | Implementation |
 | :--- | :--- | :--- |
-| **US Exec. Order 14110** | Safety & Red-Teaming | OPA policies act as an automated "Red-Team" gate. |
 | **NIST AI RMF (US)** | Risk Management | Maps qualitative risks to quantitative scores ($R$). |
 | **EU AI Act** | Traceability & Logging | OTel spans provide a high-fidelity "Flight Recorder." |
 | **AU Privacy Act (2026)** | **ADM Transparency** | **OTel metadata justifies ADM outcomes for APP 1.7 compliance.** |
