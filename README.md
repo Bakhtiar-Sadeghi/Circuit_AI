@@ -95,6 +95,25 @@ graph TD
 
 ---
 
+
+
+## 🧭 Where CircuitAI Fits
+
+Most agent governance frameworks ask: **"Can the agent act?"**  
+CircuitAI asks: **"Should the agent act?"**
+
+These are complementary layers; engineering governance enforces 
+rules; ethical governance evaluates intent.
+
+CircuitAI is the ethics layer; intercepting agentic intent before 
+execution, scoring it against five peer-reviewed ethical principles, 
+and terminating actions that violate safety thresholds. The result is 
+an auditable decision trail that supports EU AI Act, AU Privacy Act, 
+and Canada AIDA compliance.
+
+
+---
+
 ## 🛠️ Implementation Artifacts
 
 **Core Project Files:**
