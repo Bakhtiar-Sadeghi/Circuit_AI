@@ -160,7 +160,7 @@ This framework operationalizes the **Cybersecurity Ethical Decision-Making** res
 
 **Research-to-Code Translation:**
 *   **The Principlist Engine:** This code implements the five core pillars of my research—**Autonomy, Beneficence, Non-maleficence, Justice, and Explicability**—as enforceable OTLP attributes.
-*   **Tailored Governance:** Based on the "Tailored Training" findings in Study 3, this system allows for personalized governance logic that adapts to different "roles" (CEO vs. Manager) within an organization.
+*   **Tailored Governance:** Based on the "Tailored Training" findings in Study 3, this system allows for personalized governance logic that adapts to different tenants and risk profiles within an organization.
 
 > **Primary Reference:** 
 > **"A value-based dialogical framework for enhancing cybersecurity ethical decision-making via serious games"**  
