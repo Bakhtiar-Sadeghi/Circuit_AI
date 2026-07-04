@@ -108,8 +108,7 @@ rules; ethical governance evaluates intent.
 CircuitAI is the ethics layer; intercepting agentic intent before 
 execution, scoring it against five peer-reviewed ethical principles, 
 and terminating actions that violate safety thresholds. The result is 
-an auditable decision trail that supports EU AI Act, AU Privacy Act, 
-and Canada AIDA compliance.
+an auditable decision trail that supports global AI regulatory compliance requirements.
 
 
 ---
