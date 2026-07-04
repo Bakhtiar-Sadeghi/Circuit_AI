@@ -103,7 +103,7 @@ graph TD
 *   **`configs/`**: Advanced policy directory.
     *   **`policy.rego`**: Reusable OPA policy library for cross-tenant governance.
     *   **`data/global_policy.json`**: Global intent thresholds and budget constants used by the policy engine.
-    *   **`data/tenants.json`**: Metadata defining roles (e.g., CEO, Manager) and their corresponding permissions.
+    *   **`data/tenants.json`**: Metadata defining tenants (e.g., Company A, Company B) and their corresponding risk weights and thresholds.
 
 ---
 
@@ -123,7 +123,7 @@ See the Kill Switch in action by running the local containerized stack:
 
 ```
 
-*This launches Jaeger and OPA CLI with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
+*This launches Jaeger and OPA. Jaeger listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
 
 2. **Install SDKs:**
 
