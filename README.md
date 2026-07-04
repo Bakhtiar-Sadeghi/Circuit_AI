@@ -119,9 +119,11 @@ See the Kill Switch in action by running the local containerized stack:
   -p 16686:16686 -p 4317:4317 \
   jaegertracing/all-in-one:latest
 
+  docker compose up -d
+
 ```
 
-*This launches Jaeger with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
+*This launches Jaeger and OPA CLI with OTLP ingestion enabled. It listens on port 4317 for trace data from app.py and exposes the UI at http://localhost:16686.*
 
 2. **Install SDKs:**
 
@@ -131,12 +133,6 @@ Ensure your local environment has the modern OTel and OPA dependencies:
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp requests python-dotenv
 
 ```
-**Install OPA CLI:**
-e.g. 
-macOS: 
-    ```
-    brew install opa
-    ```
 
 3. **Running the OPA Governance Server:**
 
