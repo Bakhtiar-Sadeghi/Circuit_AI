@@ -134,20 +134,12 @@ pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp requ
 
 ```
 
-3. **Running the OPA Governance Server:**
-
-To activate the **Kill Switch**, start the OPA server and load both the identity and governance layers. 
-
-```bash
-opa run --server --addr :8181 configs/policy.rego configs/data/global_policy.json configs/data/tenants.json
-```
-
-4. **Run Simulation:**
+3. **Run Simulation:**
 
 ```bash
    python3 app.py
 ```
-4.1 Running into issues locally? Consider run venv
+3.1 Running into issues locally? Consider run venv
 
     python3 -m venv venv
     source venv/bin/activate
