@@ -99,7 +99,7 @@ graph TD
 
 **Core Project Files:**
 *   **`app.py`**: The main Python orchestrator. Handles the AI agent loop and exports OTLP-enriched traces to Jaeger.
-*   **`docker-compose.yaml`**: Pre-configured stack for launching Jaeger and OPA with volume mapping.
+*   **`docker-compose.yaml`**: Pre-configured stack for launching OPA with volume mapping to `configs/`.
 *   **`configs/`**: Advanced policy directory.
     *   **`policy.rego`**: Reusable OPA policy library for cross-tenant governance.
     *   **`data/global_policy.json`**: Global intent thresholds and budget constants used by the policy engine.
